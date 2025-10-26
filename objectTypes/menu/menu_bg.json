@@ -1,0 +1,23 @@
+{
+	"name": "menu_bg",
+	"plugin-id": "TiledBg",
+	"sid": 930739110289198,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 854,
+		"height": 480,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 8944491,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

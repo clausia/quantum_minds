@@ -1,0 +1,58 @@
+{
+	"name": "NovaTutorial",
+	"plugin-id": "Sprite",
+	"sid": 831903232705005,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 469,
+						"height": 1279,
+						"originX": 0.44136460554371004,
+						"originY": 0.4769351055512119,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6385315,
+						"collisionPoly": {
+							"points": [
+								0.39019189765458423,
+								0.001563721657544957,
+								0.5970149253731343,
+								0.003909304143862392,
+								0.9829424307036247,
+								0.36200156372165754,
+								0.929637526652452,
+								0.9976544175136826,
+								0.17484008528784648,
+								0.9773260359655981,
+								0.04904051172707889,
+								0.7513682564503519,
+								0.006396588486140725,
+								0.35418295543393274
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 696827408755226,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

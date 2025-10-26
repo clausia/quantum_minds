@@ -1,0 +1,10 @@
+{
+	"name": "shots_val_txt",
+	"plugin-id": "Text",
+	"sid": 699553581716058,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,122 @@
+{
+	"name": "tetrahedron_visualization_events",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "tomography_control"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 857434181862451
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 837197735964767,
+					"parameters": {
+						"variable": "centerX_bloch",
+						"value": "427"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 208391667102310,
+					"parameters": {
+						"variable": "centerY_bloch",
+						"value": "260"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 601740280580216,
+					"parameters": {
+						"variable": "radius_bloch",
+						"value": "180"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 113218575710850,
+					"parameters": {
+						"variable": "offset_axis_bloch",
+						"value": "20"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 178203600471158,
+					"parameters": {
+						"variable": "points_per_meridian_bloch",
+						"value": "400"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 721905566328773,
+					"parameters": {
+						"variable": "points_per_parallel_bloch",
+						"value": "400"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 202125344176589,
+					"parameters": {
+						"variable": "alpha_cam_bloch",
+						"value": "-0.18"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 358676877225495,
+					"parameters": {
+						"variable": "beta_cam_bloch",
+						"value": "0.20"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 731743046184792,
+					"parameters": {
+						"variable": "gamma_cam_bloch",
+						"value": "-0.7"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 732151271033859,
+					"parameters": {
+						"variable": "draw_tetra",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 531679771351564,
+					"parameters": {
+						"variable": "mode_tutorial",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 418118844781499
+		}
+	],
+	"sid": 625291801418311
+}

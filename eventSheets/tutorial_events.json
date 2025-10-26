@@ -1,0 +1,541 @@
+{
+	"name": "tutorial_events",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "step_tutorial",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 254511877721998
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "tomography_control"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 117362572125878
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 637532224419266,
+					"parameters": {
+						"variable": "centerX_bloch",
+						"value": "713"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 470927069217401,
+					"parameters": {
+						"variable": "centerY_bloch",
+						"value": "135"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 960890375823446,
+					"parameters": {
+						"variable": "radius_bloch",
+						"value": "76"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 802651859737936,
+					"parameters": {
+						"variable": "offset_axis_bloch",
+						"value": "12"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 815460327145220,
+					"parameters": {
+						"variable": "points_per_meridian_bloch",
+						"value": "175"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 312970497741669,
+					"parameters": {
+						"variable": "points_per_parallel_bloch",
+						"value": "175"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 539880624217097,
+					"parameters": {
+						"variable": "level_completed",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 983667968606136,
+					"parameters": {
+						"variable": "draw_tetra",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 417458451193491,
+					"parameters": {
+						"variable": "mode_tutorial",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 672084235233494,
+					"parameters": {
+						"variable": "hidden_state_index",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 952552981832041,
+					"parameters": {
+						"variable": "level_threshold",
+						"value": "0.8"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 938571628532680,
+					"parameters": {
+						"variable": "verification_tokens",
+						"value": "20"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "tutorial_txt",
+					"sid": 260242456620290,
+					"parameters": {
+						"text": "\"Quantum tomography is the process of reconstructing the quantum state of a particle by making many measurements in different bases (X, Y, Z). Using the results of these measurements, we estimate what the unknown state is actually like and how well you guessed it.\""
+					}
+				}
+			],
+			"sid": 806653088326333
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 311634485080355,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "start_button_tutorial"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "start_button_tutorial",
+					"sid": 252017833615938,
+					"parameters": {
+						"opacity": "45"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 968467852042590,
+					"parameters": {
+						"layout": "intro_city_layout"
+					}
+				}
+			],
+			"sid": 838511530067143
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 718898805725196,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "accept_tutorial_button"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 256379126992874,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 637613806984476,
+							"parameters": {
+								"first-value": "step_tutorial",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "tutorial_txt",
+							"sid": 802698281043080,
+							"parameters": {
+								"text": "\"Let us remember that in general a quantum state can be expressed in the form:\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "step1_txt1",
+							"sid": 624147167893986,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "eq1",
+							"sid": 361932598757554,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 263402267734149,
+							"parameters": {
+								"variable": "step_tutorial",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 335181530529384
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 580614363068347
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 188844644008358,
+							"parameters": {
+								"first-value": "step_tutorial",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "step1_txt1",
+							"sid": 511535068249360,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "eq1",
+							"sid": 475836715789743,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "tutorial_txt",
+							"sid": 756294629820005,
+							"parameters": {
+								"text": "\"In terms of the Bloch sphere, we can write the state as:\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "step2_txt1",
+							"sid": 175073582855794,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "eq2",
+							"sid": 354249547434273,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 340483226930326,
+							"parameters": {
+								"variable": "step_tutorial",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 982746857376035
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 188175527401494
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 896881303474978,
+							"parameters": {
+								"first-value": "step_tutorial",
+								"comparison": 0,
+								"second-value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "step2_txt1",
+							"sid": 335721435974919,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "eq2",
+							"sid": 674160066415170,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "tutorial_txt",
+							"sid": 655213657611194,
+							"parameters": {
+								"text": "\"If we have the hidden state: |0⟩, we can determine that it is that state by taking a Z measurement. Take a Z measurement with fewer shots than the maximum, because if you run out of shots, you won't be able to take any more measurements later. Use the controls on the right to decide which shots and measurement type to take.\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 244889429711775,
+							"parameters": {
+								"variable": "step_tutorial",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 315156751120135
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 550130948410159
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 989828561516738,
+							"parameters": {
+								"first-value": "step_tutorial",
+								"comparison": 0,
+								"second-value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "tutorial_txt",
+							"sid": 446362329389811,
+							"parameters": {
+								"text": "\"After measuring in Z, we find that the probability that it is state |0⟩ is 1, which is in line with what we expected, and the probability that it is |1⟩ is 0, so it simply cannot be state |1⟩.\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 103840295445767,
+							"parameters": {
+								"variable": "step_tutorial",
+								"value": "4"
+							}
+						}
+					],
+					"sid": 703947759743356
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 109578378457400
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 379351666946525,
+							"parameters": {
+								"first-value": "step_tutorial",
+								"comparison": 0,
+								"second-value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "tutorial_txt",
+							"sid": 828698001304808,
+							"parameters": {
+								"text": "\"Use the same logic to test the other measurements, the next state you will find is |-⟩, then |+i⟩, finally, the last state is one that is not on any axis, so you will have to use all three measurement bases to find out where it is.\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 669391654883519,
+							"parameters": {
+								"variable": "step_tutorial",
+								"value": "5"
+							}
+						}
+					],
+					"sid": 220054696946797
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 178054858036754
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 303953347646544,
+							"parameters": {
+								"first-value": "step_tutorial",
+								"comparison": 0,
+								"second-value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "tutorial_txt",
+							"sid": 434549786786675,
+							"parameters": {
+								"text": "\"When you're ready and think you know what state it is, use the top panel to locate the qubit where you think it is, using θ and φ. Then, click the 'Verify' button. This will calculate the fidelity of the state and tell you how close you were to the hidden state, the closer to 1 the better. You'll need to do this for each state.\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 549506979198806,
+							"parameters": {
+								"variable": "step_tutorial",
+								"value": "6"
+							}
+						}
+					],
+					"sid": 297797630039907
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 197121912154468
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 175563420352390,
+							"parameters": {
+								"first-value": "step_tutorial",
+								"comparison": 0,
+								"second-value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "tutorial_txt",
+							"sid": 381002495653961,
+							"parameters": {
+								"text": "\"In short, you need to do tomography the hidden state (you don't know it) and then verify if it's the one you thought it was. You must indicate this on the Bloch sphere above. In this tutorial, you'll encounter the following states: |0⟩, |-⟩, |+i⟩, and one unknown state. Try to do tomography it here, and when you're ready, head over to the game's challenges.\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 426487389622079,
+							"parameters": {
+								"variable": "step_tutorial",
+								"value": "7"
+							}
+						}
+					],
+					"sid": 201096879630939
+				}
+			]
+		}
+	],
+	"sid": 448643392014875
+}

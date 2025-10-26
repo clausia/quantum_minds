@@ -1,0 +1,10 @@
+{
+	"name": "step2_txt1",
+	"plugin-id": "Text",
+	"sid": 779418330334101,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

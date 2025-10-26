@@ -1,0 +1,10 @@
+{
+	"name": "axis_z_txt",
+	"plugin-id": "Text",
+	"sid": 312567595237268,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

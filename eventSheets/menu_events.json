@@ -1,0 +1,95 @@
+{
+	"name": "menu_events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 667115182853643,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "tutorial_button"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "tutorial_button",
+					"sid": 413215898466358,
+					"parameters": {
+						"opacity": "70"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 887315513141943,
+					"parameters": {
+						"layout": "tutorial_layout"
+					}
+				}
+			],
+			"sid": 219592648744450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 607393498953533,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "start_button"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "start_button",
+					"sid": 321641386180999,
+					"parameters": {
+						"opacity": "70"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 967514447911627,
+					"parameters": {
+						"layout": "intro_city_layout"
+					}
+				}
+			],
+			"sid": 792543802646843
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "start_level_btn",
+					"sid": 542163744816905
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 194314549696911,
+					"parameters": {
+						"layout": "interrogation_layout"
+					}
+				}
+			],
+			"sid": 174426603332274
+		}
+	],
+	"sid": 627521180688768
+}

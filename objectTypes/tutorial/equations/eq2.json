@@ -1,0 +1,60 @@
+{
+	"name": "eq2",
+	"plugin-id": "Sprite",
+	"sid": 632771629142897,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 224,
+						"height": 22,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2905963,
+						"collisionPoly": {
+							"points": [
+								0.36160714285714285,
+								0,
+								0.8705357142857143,
+								0,
+								0.9821428571428571,
+								0.09090909090909091,
+								0.9866071428571429,
+								0.9090909090909091,
+								0.8705357142857143,
+								1,
+								0.35267857142857145,
+								1,
+								0,
+								0.9090909090909091,
+								0,
+								0.09090909090909091
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 441384959893715,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

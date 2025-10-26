@@ -1,0 +1,104 @@
+{
+	"name": "interrogation_events",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "tomography_control"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 340920870163419
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 212389008090904,
+					"parameters": {
+						"variable": "centerX_bloch",
+						"value": "130"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 725352138387734,
+					"parameters": {
+						"variable": "centerY_bloch",
+						"value": "370"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 836493182368619,
+					"parameters": {
+						"variable": "radius_bloch",
+						"value": "80"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 377607238488880,
+					"parameters": {
+						"variable": "offset_axis_bloch",
+						"value": "12"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 491489959856653,
+					"parameters": {
+						"variable": "points_per_meridian_bloch",
+						"value": "175"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 714576344006296,
+					"parameters": {
+						"variable": "points_per_parallel_bloch",
+						"value": "175"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 238655629467408,
+					"parameters": {
+						"variable": "level_completed",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 271381385274839,
+					"parameters": {
+						"variable": "draw_tetra",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 250563527426224,
+					"parameters": {
+						"variable": "mode_tutorial",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 892268303982732
+		}
+	],
+	"sid": 635731031440164
+}

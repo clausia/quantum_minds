@@ -1,0 +1,10 @@
+{
+	"name": "axis_x_txt",
+	"plugin-id": "Text",
+	"sid": 592566228665465,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,10 @@
+{
+	"name": "theta_val_txt",
+	"plugin-id": "Text",
+	"sid": 333714829696327,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

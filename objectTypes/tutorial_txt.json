@@ -1,0 +1,10 @@
+{
+	"name": "tutorial_txt",
+	"plugin-id": "Text",
+	"sid": 777050555188624,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,10 @@
+{
+	"name": "fidelity_val_txt",
+	"plugin-id": "Text",
+	"sid": 492659328482626,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

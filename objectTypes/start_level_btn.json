@@ -1,0 +1,9 @@
+{
+	"name": "start_level_btn",
+	"plugin-id": "Button",
+	"sid": 890737023236146,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

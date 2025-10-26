@@ -1,0 +1,1515 @@
+{
+	"name": "tomography_control",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "centerX_bloch",
+			"type": "number",
+			"initialValue": "390",
+			"comment": "center position x for the Bloch sphere",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 309959847991505
+		},
+		{
+			"eventType": "variable",
+			"name": "centerY_bloch",
+			"type": "number",
+			"initialValue": "240",
+			"comment": "center position y for the Bloch sphere",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 831278385620074
+		},
+		{
+			"eventType": "variable",
+			"name": "radius_bloch",
+			"type": "number",
+			"initialValue": "130",
+			"comment": "Bloch sphere radius",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 260539192745038
+		},
+		{
+			"eventType": "variable",
+			"name": "offset_axis_bloch",
+			"type": "number",
+			"initialValue": "15",
+			"comment": "offset to draw axis names",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 171648526684539
+		},
+		{
+			"eventType": "variable",
+			"name": "alpha_cam_bloch",
+			"type": "number",
+			"initialValue": "-0.1",
+			"comment": "rotation about x of the camera",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 750908203341573
+		},
+		{
+			"eventType": "variable",
+			"name": "beta_cam_bloch",
+			"type": "number",
+			"initialValue": "0.35",
+			"comment": "rotation about y of the camera",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 647897456689953
+		},
+		{
+			"eventType": "variable",
+			"name": "gamma_cam_bloch",
+			"type": "number",
+			"initialValue": "-0.3",
+			"comment": "rotation about z of the camera",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 162081584831178
+		},
+		{
+			"eventType": "variable",
+			"name": "meridians_bloch",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "how many meridians to draw",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 255797615756967
+		},
+		{
+			"eventType": "variable",
+			"name": "parallels_bloch",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "how many parallels to draw",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 421642432070920
+		},
+		{
+			"eventType": "variable",
+			"name": "points_per_meridian_bloch",
+			"type": "number",
+			"initialValue": "300",
+			"comment": "amount of points to draw each meridian",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 237809863606397
+		},
+		{
+			"eventType": "variable",
+			"name": "points_per_parallel_bloch",
+			"type": "number",
+			"initialValue": "300",
+			"comment": "amount of points to draw each parallel",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 432763363635795
+		},
+		{
+			"eventType": "variable",
+			"name": "theta_guess",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "qubit angle to +z",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 636230080141997
+		},
+		{
+			"eventType": "variable",
+			"name": "phi_guess",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "qubit angle to +x",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 709922837302387
+		},
+		{
+			"eventType": "variable",
+			"name": "max_shots",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "maximum shots can be used",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 518352064587519
+		},
+		{
+			"eventType": "variable",
+			"name": "used_shots",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "shots used so far",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 654911424865465
+		},
+		{
+			"eventType": "variable",
+			"name": "meas_shots",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "shots to use in next measurement",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 124522206365020
+		},
+		{
+			"eventType": "variable",
+			"name": "verification_tokens",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "current verification tokens for this level",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 290303073759137
+		},
+		{
+			"eventType": "variable",
+			"name": "hidden_state_index",
+			"type": "number",
+			"initialValue": "-1",
+			"comment": "index of the possible hidden states for this level",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 686048279339916
+		},
+		{
+			"eventType": "variable",
+			"name": "level_threshold",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "fidelity threshold for this level",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 869918883376491
+		},
+		{
+			"eventType": "variable",
+			"name": "dialog_type",
+			"type": "string",
+			"initialValue": "\"\"",
+			"comment": "type of active dialog",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 284524427334274
+		},
+		{
+			"eventType": "variable",
+			"name": "level",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 213059498079735
+		},
+		{
+			"eventType": "variable",
+			"name": "level_completed",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 688633522177109
+		},
+		{
+			"eventType": "variable",
+			"name": "draw_tetra",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 933573569857312
+		},
+		{
+			"eventType": "variable",
+			"name": "mode_tutorial",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 614044906523117
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 968892706680088
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 141320817927450,
+					"parameters": {
+						"seconds": "0.3",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 123810591011981,
+					"parameters": {
+						"variable": "theta_guess",
+						"value": "slider_theta.Value"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 978097569406529,
+					"parameters": {
+						"variable": "phi_guess",
+						"value": "slider_phi.Value"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 912633822421092,
+					"parameters": {
+						"variable": "max_shots",
+						"value": "shots_max_txt.Text"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "shots_blocker",
+					"sid": 735126113946772,
+					"parameters": {
+						"width": "0"
+					}
+				},
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"drawBlochSphere(runtime);",
+						"",
+						"if(!runtime.globalVars.draw_tetra) {",
+						"    drawQubit(runtime);",
+						"    if(!runtime.globalVars.mode_tutorial){",
+						"        getLevelConfig(runtime);",
+						"    }",
+						"} else {",
+						"    drawTetrahedron(runtime, SIC_STATES);",
+						"}"
+					]
+				}
+			],
+			"sid": 212366006368115
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-changing",
+					"objectClass": "slider_theta",
+					"sid": 280929282882718
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 370335225848554,
+					"parameters": {
+						"variable": "theta_guess",
+						"value": "slider_theta.Value"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "theta_val_txt",
+					"sid": 777129741563503,
+					"parameters": {
+						"text": "str(slider_theta.Value) & \"°=\" & str(round((slider_theta.Value/180)*100)/100) & \"π\""
+					}
+				},
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"drawQubit(runtime);"
+					]
+				}
+			],
+			"sid": 863545019380384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-changing",
+					"objectClass": "slider_phi",
+					"sid": 907201234494058
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 248161699966848,
+					"parameters": {
+						"variable": "phi_guess",
+						"value": "slider_phi.Value"
+					}
+				},
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"drawQubit(runtime);"
+					]
+				},
+				{
+					"id": "set-text",
+					"objectClass": "phi_val_txt",
+					"sid": 674386427050913,
+					"parameters": {
+						"text": "str(slider_phi.Value) & \"°=\" & str(round((slider_phi.Value/180)*100)/100) & \"π\""
+					}
+				}
+			],
+			"sid": 686104055080875
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-changing",
+					"objectClass": "slider_shots",
+					"sid": 744369258195583
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 574378880398969,
+					"parameters": {
+						"first-value": "slider_shots.Value",
+						"comparison": 3,
+						"second-value": "max_shots"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 333921433108099,
+					"parameters": {
+						"variable": "meas_shots",
+						"value": "slider_shots.Value"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "shots_val_txt",
+					"sid": 987945143219115,
+					"parameters": {
+						"text": "slider_shots.Value"
+					}
+				}
+			],
+			"sid": 273027716499028
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-changing",
+					"objectClass": "slider_shots",
+					"sid": 392780672450903
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 536318844086134,
+					"parameters": {
+						"first-value": "slider_shots.Value",
+						"comparison": 4,
+						"second-value": "max_shots"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-value",
+					"objectClass": "slider_shots",
+					"sid": 528834798029410,
+					"parameters": {
+						"value": "max_shots"
+					}
+				}
+			],
+			"sid": 715192566850928
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "X_basis_btn",
+					"sid": 336834980556012
+				}
+			],
+			"actions": [],
+			"sid": 461269739176510,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 940987395442069,
+							"parameters": {
+								"first-value": "meas_shots",
+								"comparison": 4,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "showDialogConfirmation",
+							"sid": 120017309524343,
+							"parameters": [
+								"\"The hidden state will be measured in basis X using \" & meas_shots & \" shots.\"",
+								false,
+								false
+							]
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 660332146994885,
+							"parameters": {
+								"variable": "dialog_type",
+								"value": "\"measX\""
+							}
+						}
+					],
+					"sid": 455780133768247
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 365119635488198
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 636073392980096,
+							"parameters": {
+								"first-value": "meas_shots",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "showDialogConfirmation",
+							"sid": 469645269807794,
+							"parameters": [
+								"\"Measurement cannot be performed with 0 shots. Please choose a quantity.\"",
+								true,
+								false
+							]
+						}
+					],
+					"sid": 336629047383011
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Y_basis_btn",
+					"sid": 730627972261628
+				}
+			],
+			"actions": [],
+			"sid": 532835491006069,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 745985715627221,
+							"parameters": {
+								"first-value": "meas_shots",
+								"comparison": 4,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "showDialogConfirmation",
+							"sid": 137029301744663,
+							"parameters": [
+								"\"The hidden state will be measured in basis Y using \" & meas_shots & \" shots.\"",
+								false,
+								false
+							]
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 880332021095317,
+							"parameters": {
+								"variable": "dialog_type",
+								"value": "\"measY\""
+							}
+						}
+					],
+					"sid": 311615323249669
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 671559970555123
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 311694955659417,
+							"parameters": {
+								"first-value": "meas_shots",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "showDialogConfirmation",
+							"sid": 892166467128652,
+							"parameters": [
+								"\"Measurement cannot be performed with 0 shots. Please choose a quantity.\"",
+								true,
+								false
+							]
+						}
+					],
+					"sid": 701223646051011
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Z_basis_btn",
+					"sid": 406775410718553
+				}
+			],
+			"actions": [],
+			"sid": 279315557247465,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 233852594477645,
+							"parameters": {
+								"first-value": "meas_shots",
+								"comparison": 4,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "showDialogConfirmation",
+							"sid": 137621183629525,
+							"parameters": [
+								"\"The hidden state will be measured in basis Z using \" & meas_shots & \" shots.\"",
+								false,
+								false
+							]
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 506575482486320,
+							"parameters": {
+								"variable": "dialog_type",
+								"value": "\"measZ\""
+							}
+						}
+					],
+					"sid": 327882545758742
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 813345611630583
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 617075178102862,
+							"parameters": {
+								"first-value": "meas_shots",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "showDialogConfirmation",
+							"sid": 180271281905702,
+							"parameters": [
+								"\"Measurement cannot be performed with 0 shots. Please choose a quantity.\"",
+								true,
+								false
+							]
+						}
+					],
+					"sid": 174288357893659
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "verify_btn",
+					"sid": 393772997950455
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 201993451669954,
+					"parameters": {
+						"first-value": "verification_tokens",
+						"comparison": 4,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "showDialogConfirmation",
+					"sid": 996007536815992,
+					"parameters": [
+						"\"Your chosen state on the left Bloch sphere will be compared to the hidden state, spending a verification token.\"",
+						false,
+						false
+					]
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 134359941555317,
+					"parameters": {
+						"variable": "dialog_type",
+						"value": "\"verify\""
+					}
+				}
+			],
+			"sid": 446254631638485
+		},
+		{
+			"functionName": "tomoControlsDisable",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "slider_phi",
+					"sid": 489963250949750,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "slider_theta",
+					"sid": 613764147664854,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "slider_shots",
+					"sid": 426374591913328,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "X_basis_btn",
+					"sid": 384926961301177,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Y_basis_btn",
+					"sid": 352624475582422,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Z_basis_btn",
+					"sid": 532007598268030,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "verify_btn",
+					"sid": 991375426785362,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 217076570161374
+		},
+		{
+			"functionName": "tomoControlsEnable",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "slider_phi",
+					"sid": 178073381021874,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "slider_theta",
+					"sid": 984311574162110,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "slider_shots",
+					"sid": 709138241349958,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "X_basis_btn",
+					"sid": 859034721764023,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Y_basis_btn",
+					"sid": 504474596533490,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Z_basis_btn",
+					"sid": 394482443341303,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "verify_btn",
+					"sid": 704404195402718,
+					"parameters": {
+						"mode": "enabled"
+					}
+				}
+			],
+			"sid": 244968351041272
+		},
+		{
+			"functionName": "showDialogConfirmation",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "textDiag",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 977985668944916
+				},
+				{
+					"name": "alert",
+					"type": "boolean",
+					"initialValue": "false",
+					"comment": "",
+					"sid": 567976313691002
+				},
+				{
+					"name": "tutorial",
+					"type": "boolean",
+					"initialValue": "false",
+					"comment": "",
+					"sid": 899727301123682
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "tomoControlsDisable",
+					"sid": 492509083500175
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialog_tomography",
+					"sid": 183706118176669,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "dialog_txt",
+					"sid": 302272468972434,
+					"parameters": {
+						"text": "textDiag"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialog_txt",
+					"sid": 873462963209296,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 776616466394061,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "evaluate-expression",
+							"objectClass": "System",
+							"sid": 228866308016882,
+							"parameters": {
+								"value": "alert"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "accept_alert_button",
+							"sid": 703343284381327,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 333680402139669
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 624968021468920
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "accept_button",
+							"sid": 774047944490801,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "cancel_button",
+							"sid": 307384336891770,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 343615839997952
+				}
+			]
+		},
+		{
+			"functionName": "hideDialogConfirmation",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "tomoControlsDisable",
+					"sid": 193157812275391
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialog_tomography",
+					"sid": 790026756083744,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "accept_button",
+					"sid": 866501377015788,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cancel_button",
+					"sid": 976270797215788,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "accept_alert_button",
+					"sid": 525227765434159,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialog_txt",
+					"sid": 651575680569065,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 630746828994964
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 741986298998264,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "accept_button"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "hideDialogConfirmation",
+					"sid": 270020007530404
+				},
+				{
+					"callFunction": "tomoControlsEnable",
+					"sid": 653164908123107
+				}
+			],
+			"sid": 414001298448265,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 371701151269731,
+							"parameters": {
+								"first-value": "dialog_type",
+								"comparison": 0,
+								"second-value": "\"measX\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 297291577482226,
+							"parameters": {
+								"variable": "dialog_type",
+								"value": "\"\""
+							}
+						},
+						{
+							"type": "script",
+							"language": "javascript",
+							"script": [
+								"if(runtime.globalVars.mode_tutorial) {",
+								"    tomography(runtime, \"X\", TUTORIAL_STATES);",
+								"} else {",
+								"    tomography(runtime, \"X\", SIC_STATES);",
+								"}"
+							]
+						}
+					],
+					"sid": 338698786274267
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 340298395190976,
+							"parameters": {
+								"first-value": "dialog_type",
+								"comparison": 0,
+								"second-value": "\"measY\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 621538122670844,
+							"parameters": {
+								"variable": "dialog_type",
+								"value": "\"\""
+							}
+						},
+						{
+							"type": "script",
+							"language": "javascript",
+							"script": [
+								"if(runtime.globalVars.mode_tutorial) {",
+								"    tomography(runtime, \"Y\", TUTORIAL_STATES);",
+								"} else {",
+								"    tomography(runtime, \"Y\", SIC_STATES);",
+								"}"
+							]
+						}
+					],
+					"sid": 890111844667957
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 418615738439413,
+							"parameters": {
+								"first-value": "dialog_type",
+								"comparison": 0,
+								"second-value": "\"measZ\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 461379441653407,
+							"parameters": {
+								"variable": "dialog_type",
+								"value": "\"\""
+							}
+						},
+						{
+							"type": "script",
+							"language": "javascript",
+							"script": [
+								"if(runtime.globalVars.mode_tutorial) {",
+								"    tomography(runtime, \"Z\", TUTORIAL_STATES);",
+								"} else {",
+								"    tomography(runtime, \"Z\", SIC_STATES);",
+								"}"
+							]
+						}
+					],
+					"sid": 899142623567761
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 142393729294792,
+							"parameters": {
+								"first-value": "dialog_type",
+								"comparison": 0,
+								"second-value": "\"levelComplete\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 986126714554774,
+							"parameters": {
+								"variable": "dialog_type",
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 472564201281505,
+							"parameters": {
+								"layout": "interrogation_layout2"
+							}
+						}
+					],
+					"sid": 144522976418830
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 947368214964943,
+							"parameters": {
+								"first-value": "dialog_type",
+								"comparison": 0,
+								"second-value": "\"verify\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 508251304145021,
+							"parameters": {
+								"variable": "dialog_type",
+								"value": "\"\""
+							}
+						},
+						{
+							"type": "script",
+							"language": "javascript",
+							"script": [
+								"if(runtime.globalVars.mode_tutorial) {",
+								"    checkFidelity(runtime, TUTORIAL_STATES);",
+								"} else {",
+								"    checkFidelity(runtime, SIC_STATES);",
+								"}"
+							]
+						}
+					],
+					"sid": 320519867037056,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "evaluate-expression",
+									"objectClass": "System",
+									"sid": 977873180438330,
+									"parameters": {
+										"value": "level_completed"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "showDialogConfirmation",
+									"sid": 166436417979685,
+									"parameters": [
+										"\"You've decoded <K\" & level & \">'s information, and now you know one more quantum state. Continue with the next interrogation.\"",
+										true,
+										false
+									]
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 673836268545369,
+									"parameters": {
+										"variable": "dialog_type",
+										"value": "\"levelComplete\""
+									}
+								}
+							],
+							"sid": 302814474417232
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 227822854076960,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "cancel_button"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "hideDialogConfirmation",
+					"sid": 516557663686498
+				},
+				{
+					"callFunction": "tomoControlsEnable",
+					"sid": 430804733416762
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 994868097821500,
+					"parameters": {
+						"variable": "dialog_type",
+						"value": "\"\""
+					}
+				}
+			],
+			"sid": 178123291547097
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 963019250719646,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "accept_alert_button"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "hideDialogConfirmation",
+					"sid": 546160560945161
+				},
+				{
+					"callFunction": "tomoControlsEnable",
+					"sid": 148705423633073
+				}
+			],
+			"sid": 607879764870920,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 564490626292488,
+							"parameters": {
+								"first-value": "dialog_type",
+								"comparison": 0,
+								"second-value": "\"levelComplete\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 601431309872285,
+							"parameters": {
+								"variable": "dialog_type",
+								"value": "\"\""
+							}
+						}
+					],
+					"sid": 969383718260846,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 353901938882303,
+									"parameters": {
+										"first-value": "level",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 119981975218633,
+									"parameters": {
+										"layout": "interrogation_layout2"
+									}
+								}
+							],
+							"sid": 591071122281525
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 134028983638547,
+									"parameters": {
+										"first-value": "level",
+										"comparison": 0,
+										"second-value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 478122719202754,
+									"parameters": {
+										"layout": "interrogation_layout3"
+									}
+								}
+							],
+							"sid": 767549956014751
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 989301036742568,
+									"parameters": {
+										"first-value": "level",
+										"comparison": 0,
+										"second-value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 689091825630455,
+									"parameters": {
+										"layout": "interrogation_layout4"
+									}
+								}
+							],
+							"sid": 646595849735429
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 152023246387854,
+									"parameters": {
+										"first-value": "level",
+										"comparison": 0,
+										"second-value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 379778492916463,
+									"parameters": {
+										"layout": "tetrahedron_visualization"
+									}
+								}
+							],
+							"sid": 689440670547468
+						}
+					]
+				}
+			]
+		}
+	],
+	"sid": 559278733045594
+}

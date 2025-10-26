@@ -1,0 +1,76 @@
+{
+	"name": "novaFace",
+	"plugin-id": "Sprite",
+	"sid": 461991311392789,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 171,
+						"height": 160,
+						"originX": 0.4462911665127731,
+						"originY": 0.5543750000000001,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4825724,
+						"collisionPoly": {
+							"points": [
+								0.464553195855135,
+								0,
+								0.5802127150234261,
+								0,
+								0.6349988030505112,
+								0,
+								0.7019595773058377,
+								0,
+								0.7750076946752847,
+								0.025625,
+								0.8663178413870934,
+								0.11374999999999999,
+								0.9211039294141788,
+								0.20187500000000003,
+								0.9698026743271434,
+								0.32671875,
+								0.9880647036695052,
+								0.4221875,
+								0.9819773605553845,
+								0.6865625,
+								0.8115317533600082,
+								1,
+								0,
+								1,
+								0,
+								0.70859375,
+								0.2941075886597585,
+								0.04031249999999997,
+								0.33671899045860265,
+								0.0035937500000000067,
+								0.3854177353715673,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 153770399105155,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

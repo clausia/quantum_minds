@@ -1,0 +1,68 @@
+{
+	"name": "Ryo",
+	"plugin-id": "Sprite",
+	"sid": 305151717361428,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 137,
+						"height": 260,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6032677,
+						"collisionPoly": {
+							"points": [
+								0.6788321167883211,
+								0.08461538461538462,
+								0.7956204379562044,
+								0.10384615384615385,
+								0.8394160583941606,
+								0.16153846153846155,
+								0.8978102189781022,
+								0.31153846153846154,
+								0.927007299270073,
+								0.9423076923076923,
+								0.5620437956204379,
+								0.9692307692307692,
+								0.49635036496350365,
+								0.9653846153846154,
+								0.40875912408759124,
+								0.95,
+								0.21897810218978103,
+								0.6692307692307692,
+								0.27007299270072993,
+								0.35384615384615387,
+								0.36496350364963503,
+								0.21153846153846154,
+								0.40145985401459855,
+								0.19230769230769232
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 301391112134869,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

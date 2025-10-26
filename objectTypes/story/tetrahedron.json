@@ -1,0 +1,56 @@
+{
+	"name": "tetrahedron",
+	"plugin-id": "Sprite",
+	"sid": 302060873583306,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 702,
+						"height": 702,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8951788,
+						"collisionPoly": {
+							"points": [
+								0.9487179487179487,
+								0.5242165242165242,
+								0.9501424501424501,
+								0.6652421652421653,
+								0.5512820512820513,
+								0.8732193732193733,
+								0.05982905982905984,
+								0.6923076923076923,
+								0.04415954415954415,
+								0.5427350427350427,
+								0.4943019943019943,
+								0.12108262108262108
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 139041372192905,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

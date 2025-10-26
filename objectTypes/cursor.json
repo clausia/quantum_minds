@@ -1,0 +1,98 @@
+{
+	"name": "cursor",
+	"plugin-id": "Sprite",
+	"sid": 591381684957086,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 34,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3380063,
+						"collisionPoly": {
+							"points": [
+								0.16,
+								0,
+								0.24,
+								0,
+								0.36,
+								0.058823529411764705,
+								1,
+								0.47058823529411764,
+								1,
+								0.5294117647058824,
+								0.24,
+								1,
+								0.16,
+								1,
+								0,
+								0.9117647058823529,
+								0,
+								0.08823529411764706
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 25,
+						"height": 34,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5073886,
+						"collisionPoly": {
+							"points": [
+								0.16,
+								0,
+								0.24,
+								0,
+								0.36,
+								0.058823529411764705,
+								1,
+								0.47058823529411764,
+								1,
+								0.5294117647058824,
+								0.24,
+								1,
+								0.16,
+								1,
+								0,
+								0.9117647058823529,
+								0,
+								0.08823529411764706
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 897513006638288,
+				"name": "blink",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 2
+			}
+		],
+		"subfolders": []
+	}
+}

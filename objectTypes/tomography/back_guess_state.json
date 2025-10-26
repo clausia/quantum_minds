@@ -1,0 +1,60 @@
+{
+	"name": "back_guess_state",
+	"plugin-id": "Sprite",
+	"sid": 251464300752166,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 396,
+						"height": 694,
+						"originX": 0.4671717171717172,
+						"originY": 0.537463976945245,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7999130,
+						"collisionPoly": {
+							"points": [
+								0.0025252525252525255,
+								1,
+								0.0025252525252525255,
+								0.018731988472622477,
+								0.030303030303030307,
+								0.0028818443804034173,
+								0.34595959595959597,
+								0.0028818443804034173,
+								0.37626262626262624,
+								0.0201729106628242,
+								0.37626262626262624,
+								1,
+								0.3434343434343434,
+								1,
+								0.027777777777777776,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 956582310982180,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

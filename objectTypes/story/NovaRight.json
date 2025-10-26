@@ -1,0 +1,62 @@
+{
+	"name": "NovaRight",
+	"plugin-id": "Sprite",
+	"sid": 733262242156746,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 95,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.486328125,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7318832,
+						"collisionPoly": {
+							"points": [
+								0.7052631578947368,
+								0.0078125,
+								0.8315789473684211,
+								0.0078125,
+								0.9789473684210528,
+								0.05078125,
+								0.9789473684210528,
+								0.59375,
+								0.8631578947368421,
+								0.97265625,
+								0.30526315789473685,
+								0.97265625,
+								0.010526315789473684,
+								0.328125,
+								0.021052631578947368,
+								0.24609375,
+								0.10526315789473684,
+								0.203125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 142194774047096,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

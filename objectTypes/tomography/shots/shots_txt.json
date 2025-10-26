@@ -1,0 +1,10 @@
+{
+	"name": "shots_txt",
+	"plugin-id": "Text",
+	"sid": 579173750304800,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,10 @@
+{
+	"name": "phi_txt",
+	"plugin-id": "Text",
+	"sid": 498336399873363,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,101 @@
+{
+	"name": "intro_city_events",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "dialogue"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 312505676578507
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 613469078268779,
+					"parameters": {
+						"audio-file": "city-music",
+						"loop": "looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"music-city\""
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 287603795426612,
+					"parameters": {
+						"audio-file": "intro_part1"
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 278805467542957,
+					"parameters": {
+						"audio-file": "into_part2"
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 837278992138357,
+					"parameters": [
+						"\"In 2137, the city of Neo-Tessara employs quantum-core robots to perform tasks in superposed states. Each android can handle multiple possibilities at once, making it efficient at completing complex tasks for the city.\"",
+						"18",
+						"\"story/intro_part1\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 499001117940552,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 426435405136828,
+					"parameters": [
+						"\"However, their core has a restriction: if their state is measured directly, it collapses, and they shut down. \nBy law, human detectives can only interrogate these robots using forensic quantum tomography protocols, measuring in different bases (X, Y, Z) to reconstruct the state vector without exceeding the collapse limits.\"",
+						"20",
+						"\"story/into_part2\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 665632367940951,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 898371383386319,
+					"parameters": {
+						"tag": "\"music-city\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 837510523600002,
+					"parameters": {
+						"layout": "robots_found_layout"
+					}
+				}
+			],
+			"sid": 143018947919444
+		}
+	],
+	"sid": 322501490913162
+}

@@ -1,0 +1,10 @@
+{
+	"name": "meas_basis_txt",
+	"plugin-id": "Text",
+	"sid": 573439213146356,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

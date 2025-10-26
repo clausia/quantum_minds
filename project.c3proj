@@ -1,0 +1,705 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 45800,
+	"name": "Quantum Minds",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "DrawingCanvas",
+			"name": "Drawing canvas",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "sliderbar",
+			"name": "Slider bar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "skymen_RoundedSquareMask",
+			"name": "Rounded Square Mask",
+			"author": "skymen",
+			"bundled": false,
+			"version": "1.1.0.0"
+		}
+	],
+	"uniqueId": "lfuf5geijus",
+	"objectTypes": {
+		"items": [
+			"Mouse",
+			"cursor",
+			"Keyboard",
+			"Audio",
+			"empty_room",
+			"background",
+			"robot_name_txt",
+			"start_level_btn",
+			"Text2",
+			"step2_txt1",
+			"tutorial_txt",
+			"Text3"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"menu_bg",
+					"tutorial_button",
+					"start_button"
+				],
+				"subfolders": [],
+				"name": "menu"
+			},
+			{
+				"items": [
+					"NovaTutorial",
+					"start_button_tutorial",
+					"step1_txt1",
+					"dialog_tutorial",
+					"accept_tutorial_button"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"eq1",
+							"eq2"
+						],
+						"subfolders": [],
+						"name": "equations"
+					}
+				],
+				"name": "tutorial"
+			},
+			{
+				"items": [
+					"city",
+					"textcitybg",
+					"cityText",
+					"robotsFoundBg",
+					"NovaFoundRobot"
+				],
+				"subfolders": [],
+				"name": "intro"
+			},
+			{
+				"items": [
+					"interrogationAnimation",
+					"collapsedAnimation",
+					"tetrahedronDiscoverBg",
+					"NovaRight",
+					"Ryo",
+					"tetrahedron",
+					"animationLab",
+					"caseConclusionBg",
+					"finalBg",
+					"labBackground",
+					"novaFace",
+					"text",
+					"textBg"
+				],
+				"subfolders": [],
+				"name": "story"
+			},
+			{
+				"items": [
+					"back_guess_state",
+					"back_tomography",
+					"dialog_tomography",
+					"accept_button",
+					"cancel_button",
+					"dialog_txt",
+					"accept_alert_button",
+					"robot_name"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"bkp_guess",
+							"phi_txt",
+							"phi_val_txt",
+							"slider_phi",
+							"slider_theta",
+							"theta_txt",
+							"theta_val_txt"
+						],
+						"subfolders": [],
+						"name": "guessState"
+					},
+					{
+						"items": [
+							"bkp_shots",
+							"shots_blocker",
+							"shots_max_txt",
+							"shots_min_txt",
+							"shots_txt",
+							"shots_val_txt",
+							"slider_shots"
+						],
+						"subfolders": [],
+						"name": "shots"
+					},
+					{
+						"items": [
+							"bkp_meas",
+							"bkp_meas_results",
+							"meas_basis_txt",
+							"results_minus_txt",
+							"results_minus_val_txt",
+							"results_minusi_txt",
+							"results_minusi_val_txt",
+							"results_one_txt",
+							"results_one_val_txt",
+							"results_plus_txt",
+							"results_plus_val_txt",
+							"results_plusi_txt",
+							"results_plusi_val_txt",
+							"results_txt",
+							"results_zero_txt",
+							"results_zero_val_txt",
+							"X_basis_btn",
+							"Y_basis_btn",
+							"Z_basis_btn"
+						],
+						"subfolders": [],
+						"name": "measurements"
+					},
+					{
+						"items": [
+							"bkp_ver_tok",
+							"bkp_verify",
+							"fidelity_txt",
+							"fidelity_val_txt",
+							"ver_tok_txt",
+							"ver_tok_val_txt",
+							"verify_btn"
+						],
+						"subfolders": [],
+						"name": "fidelity"
+					}
+				],
+				"name": "tomography"
+			},
+			{
+				"items": [
+					"axis",
+					"axis_x_txt",
+					"axis_y_txt",
+					"axis_z_txt",
+					"BlochCanvas",
+					"QubitCanvas",
+					"sphere"
+				],
+				"subfolders": [],
+				"name": "blochSphere"
+			}
+		]
+	},
+	"functionsName": "Functions",
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"menu_layout",
+			"intro_city_layout",
+			"tutorial_layout",
+			"robots_found_layout",
+			"tetrahedron_discover_layout",
+			"level_test",
+			"interrogation_layout",
+			"interrogation_layout2",
+			"interrogation_layout3",
+			"interrogation_layout4",
+			"tetrahedron_visualization",
+			"lab_layout",
+			"case_conclusion_layout",
+			"final_layout"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"menu_events",
+			"tutorial_events",
+			"robots_found_events",
+			"interrogation_events",
+			"tetrahedron_discover_events",
+			"tomography_control",
+			"level_test_event",
+			"tetrahedron_visualization_events",
+			"dialogue",
+			"intro_city_events",
+			"lab_events",
+			"final_events",
+			"case_conclusion_events"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [
+				{
+					"name": "utils.js",
+					"type": "application/javascript",
+					"sid": 691833480684045,
+					"script-info": {
+						"purpose": "imports-for-events"
+					}
+				},
+				{
+					"name": "tomography.js",
+					"type": "application/javascript",
+					"sid": 934212044898837,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "main.js",
+					"type": "application/javascript",
+					"sid": 894033428126816,
+					"script-info": {
+						"purpose": "main"
+					}
+				},
+				{
+					"name": "bloch_sphere.js",
+					"type": "application/javascript",
+					"sid": 907167633716354,
+					"script-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "conclusion-ryo1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 172612969479027,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "conclusion-text.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 524860740078953,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "FinalNova_.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 605677670743867,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "found_robots_Nova1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 240659550198538,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "robots_found-_text2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 742005335976454,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "análisis2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 193994006707236,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "conclusionNova1.5.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 390585482084149,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "conclusionNova2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 402166268104258,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "labclandestino-text1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 235211020689156,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "labclandestino-text2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 799913291298686,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "labclandestino-text3.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 551768992774441,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "robots_found_ryo1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 115084190516293,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "tetrahedronNova.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 457344820707483,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "análisis1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 784281717982407,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "conclusionNova_1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 743457310336432,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "final-text1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 366469631933194,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "robots-found-text1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 904771985005430,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Interrogation.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 927129757433719,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "intro_part1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 412712419340914,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "into_part2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 127505204389581,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "story"
+				}
+			]
+		},
+		"music": {
+			"items": [
+				{
+					"name": "city-music.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 667886252764760,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "findrobots-music.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 676202545239099,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "found_lab_music.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 800842579160119,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "conclusion_case_music.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 547672455362749,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "interrogation_music.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 464193914794517,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "final_music.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 980800959731851,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 716399963728359,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 792160534136421,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 893123627091791,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 702077434783428,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 681984755243102,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 424050859515682,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 165812502633401,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [
+			"Flowchart 1"
+		],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"autoIncrementVersion": false,
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"multitexturing": "auto",
+		"gpuPreference": "high-performance",
+		"framerateMode": "vsync",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"uidAllocationMode": "increment",
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"scriptsType": "module"
+	},
+	"viewportWidth": 854,
+	"viewportHeight": 480,
+	"firstLayout": "menu_layout"
+}
