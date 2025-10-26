@@ -25,13 +25,13 @@
 						"blend-margin-x": 0.1,
 						"blend-margin-y": 0.1
 					},
-					"uid": 323,
-					"sid": 131553335980189,
+					"uid": 331,
+					"sid": 817124845393808,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 131553335980189,
+						"sid": 817124845393808,
 						"expanded": true
 					},
 					"showing": true,
@@ -54,7 +54,7 @@
 					}
 				}
 			],
-			"sid": 769990961370355,
+			"sid": 286452754740615,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -97,13 +97,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 324,
-					"sid": 664309488652902,
+					"uid": 332,
+					"sid": 957982462052822,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 664309488652902,
+						"sid": 957982462052822,
 						"expanded": true
 					},
 					"showing": true,
@@ -134,13 +134,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 325,
-					"sid": 971475669454431,
+					"uid": 333,
+					"sid": 538801712636438,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 971475669454431,
+						"sid": 538801712636438,
 						"expanded": true
 					},
 					"showing": true,
@@ -161,9 +161,134 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "text",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Consolas",
+						"size": 17,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.0392156862745098,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 334,
+					"sid": 693269443091846,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 693269443091846,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 54,
+						"y": 21,
+						"width": 757,
+						"height": 125,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
-			"sid": 456107081514979,
+			"sid": 370305937072128,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Nova",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "novaFace",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 335,
+					"sid": 543561085460008,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 543561085460008,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 792,
+						"y": 129,
+						"width": 59.849999999999994,
+						"height": 56,
+						"originX": 0.4462911665127731,
+						"originY": 0.5543750000000001,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 479364944691862,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -197,7 +322,7 @@
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 910557712455207,
+	"sid": 584376997676374,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,

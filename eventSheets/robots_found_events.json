@@ -1,5 +1,183 @@
 {
 	"name": "robots_found_events",
-	"events": [],
-	"sid": 230783647122728
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "dialogue"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 303285063483770
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 893313603364084,
+					"parameters": {
+						"audio-file": "findrobots-music",
+						"loop": "looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"music-robots\""
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 953132897190036,
+					"parameters": {
+						"audio-file": "robots-found-text1"
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 636205489486225,
+					"parameters": {
+						"audio-file": "robots_found-_text2"
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 961872324507372,
+					"parameters": {
+						"audio-file": "found_robots_Nova1"
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 335366994012920,
+					"parameters": {
+						"audio-file": "robots_found_ryo1"
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 601109334988442,
+					"parameters": [
+						"\"In District K, some maintenance androids stand motionless, their eyes glowing with blue interference. Their cores show a pattern: out-of-range quantum noise and partial coherence.\"",
+						"10",
+						"\"story/robots-found-text1\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 660254247837412,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 306846313064480,
+					"parameters": [
+						"\"Nova and Ryo were assigned to investigate what happened.\"",
+						"3",
+						"\"story/robots_found-_text2\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 621980193225710,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RyoFace",
+					"sid": 461405350416737,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 638488627956830,
+					"parameters": [
+						"\"They all share the same symptom, but each has a different key. There's a common connection between them that leads to their failure.\"",
+						"6",
+						"\"story/robots_found_ryo1\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 624436599927823,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "novaFace",
+					"sid": 398521291348400,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RyoFace",
+					"sid": 653319673115722,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 866055203148720,
+					"parameters": [
+						"\"We'll have to interrogate all the robots to find out what's going on.\"\r\n",
+						"4",
+						"\"story/found_robots_Nova1\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 340868692826540,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "novaFace",
+					"sid": 769035599811523,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 777390388664983,
+					"parameters": {
+						"tag": "\"music-robots\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 698869832612098,
+					"parameters": {
+						"layout": "interrogation_text_layout"
+					}
+				}
+			],
+			"sid": 529135219552255
+		}
+	],
+	"sid": 131277272614401
 }

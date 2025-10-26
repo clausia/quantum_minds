@@ -1,5 +1,134 @@
 {
 	"name": "tetrahedron_discover_events",
-	"events": [],
-	"sid": 865281030966961
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "dialogue"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 261697734517653
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 144046895514958,
+					"parameters": {
+						"audio-file": "conclusion_case_music",
+						"loop": "looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"music-tetrahedron\""
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 475603933290917,
+					"parameters": {
+						"audio-file": "análisis1"
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 114820882041614,
+					"parameters": {
+						"audio-file": "análisis2"
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 599674173282687,
+					"parameters": {
+						"audio-file": "tetrahedronNova"
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 655598698575055,
+					"parameters": [
+						"\"Nova analyzes the four reconstructed states: each one points to a different position on the Bloch sphere. However, when she plots them, she notices something unbelievable: the four form a nearly perfect tetrahedron.\"",
+						"15",
+						"\"story/análisis1\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 817813657339275,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 111742472855617,
+					"parameters": [
+						"\"That pattern is familiar: it corresponds to a SIC-POVM (Symmetric Informationally Complete POVM) ensemble, a type of optimal measurement in quantum tomography.\"",
+						"10",
+						"\"story/análisis2\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 692122796337926,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "novaFace",
+					"sid": 608082135058006,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 439854492985145,
+					"parameters": [
+						"\"They're not memories, Ryo. They're a calibration key. Someone used their minds as reference points for a quantum decoder.\"\r\n",
+						"8",
+						"\"story/tetrahedronNova\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 929531029834326,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "novaFace",
+					"sid": 841153392046344,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 187660768726945,
+					"parameters": {
+						"layout": "tetrahedron_visualization"
+					}
+				}
+			],
+			"sid": 821185774563834
+		}
+	],
+	"sid": 138064816566134
 }

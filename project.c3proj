@@ -149,7 +149,8 @@
 					"labBackground",
 					"novaFace",
 					"text",
-					"textBg"
+					"textBg",
+					"RyoFace"
 				],
 				"subfolders": [],
 				"name": "story"
@@ -261,13 +262,15 @@
 			"intro_city_layout",
 			"tutorial_layout",
 			"robots_found_layout",
-			"tetrahedron_discover_layout",
+			"robots_found_layout_old",
 			"level_test",
 			"interrogation_layout",
 			"interrogation_layout2",
 			"interrogation_layout3",
 			"interrogation_layout4",
 			"tetrahedron_visualization",
+			"interrogation_text_layout",
+			"tetrahedron_discover_layout",
 			"lab_layout",
 			"case_conclusion_layout",
 			"final_layout"
@@ -278,17 +281,19 @@
 		"items": [
 			"menu_events",
 			"tutorial_events",
-			"robots_found_events",
+			"robots_found_events_old",
 			"interrogation_events",
-			"tetrahedron_discover_events",
 			"tomography_control",
 			"level_test_event",
 			"tetrahedron_visualization_events",
 			"dialogue",
 			"intro_city_events",
-			"lab_events",
+			"interrogation_text_events",
+			"case_conclusion_events",
 			"final_events",
-			"case_conclusion_events"
+			"lab_events",
+			"robots_found_events",
+			"tetrahedron_discover_events"
 		],
 		"subfolders": []
 	},

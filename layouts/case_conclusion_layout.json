@@ -25,13 +25,13 @@
 						"blend-margin-x": 0.1,
 						"blend-margin-y": 0.1
 					},
-					"uid": 321,
-					"sid": 108846840677963,
+					"uid": 336,
+					"sid": 604170216510917,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 108846840677963,
+						"sid": 604170216510917,
 						"expanded": true
 					},
 					"showing": true,
@@ -54,7 +54,7 @@
 					}
 				}
 			],
-			"sid": 760083064392721,
+			"sid": 173229293671903,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -97,22 +97,22 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 322,
-					"sid": 915098095636947,
+					"uid": 337,
+					"sid": 378352327618048,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 915098095636947,
+						"sid": 378352327618048,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 433.5,
-						"y": 76.5,
+						"y": 86.5,
 						"width": 827.9999999999999,
-						"height": 145,
+						"height": 165,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -124,9 +124,243 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "text",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Consolas",
+						"size": 17,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.0392156862745098,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 338,
+					"sid": 565904250667416,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 565904250667416,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 42,
+						"y": 23,
+						"width": 777,
+						"height": 121,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cursor",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "blink",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 339,
+					"sid": 206642935156068,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 206642935156068,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 48,
+						"y": 139,
+						"width": 14.000000000000002,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.8
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
-			"sid": 860060789341002,
+			"sid": 371468589956256,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Ryo",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "RyoFace",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 340,
+					"sid": 250662408552142,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 250662408552142,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 795,
+						"y": 131,
+						"width": 54.3,
+						"height": 49.8,
+						"originX": 0.4530386740331492,
+						"originY": 0.4879518072289157,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 265242350165943,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Nova",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "novaFace",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 341,
+					"sid": 923066862128066,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 923066862128066,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 793,
+						"y": 133,
+						"width": 56.43,
+						"height": 52.800000000000004,
+						"originX": 0.4462911665127731,
+						"originY": 0.5543750000000001,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 219787060545636,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -160,7 +394,7 @@
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 787869537166602,
+	"sid": 926691405248736,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,

@@ -1,5 +1,224 @@
 {
 	"name": "case_conclusion_events",
-	"events": [],
-	"sid": 266286099797061
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "dialogue"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 729844233015239
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 672910749528792,
+					"parameters": {
+						"audio-file": "conclusion_case_music",
+						"loop": "looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"music-conclusion\""
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 534067827801907,
+					"parameters": {
+						"audio-file": "conclusion-text"
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 959446474202067,
+					"parameters": {
+						"audio-file": "conclusionNova_1"
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 706713251301664,
+					"parameters": {
+						"audio-file": "conclusionNova1.5"
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 340909144705119,
+					"parameters": {
+						"audio-file": "conclusionNova2"
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 601477572836405,
+					"parameters": {
+						"audio-file": "conclusion-ryo1"
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 108096277582173,
+					"parameters": [
+						"\"Nova presents her report.\"",
+						"2",
+						"\"story/conclusion-text\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 153805662388429,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "novaFace",
+					"sid": 251809861912612,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 156975335485827,
+					"parameters": [
+						"\"Case closed. The states matched a tetrahedral reference frame. Someone attempted to establish an illegal quantum transmission but failed to calculate the entropy limit.\"",
+						"12",
+						"\"story/conclusionNova_1\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 724540999384534,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 832877315892674,
+					"parameters": [
+						"\"The robots didn't crash by mistake—they were used as a calibration base.\"",
+						"4",
+						"\"story/conclusionNova1.5\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 831018217493527,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "novaFace",
+					"sid": 116179744395780,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RyoFace",
+					"sid": 938853690755939,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 841656148962144,
+					"parameters": [
+						"\"So someone was trying to teleport classified information.\"",
+						"2",
+						"\"story/conclusion-ryo1\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 149336286795568,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RyoFace",
+					"sid": 368916868012682,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "novaFace",
+					"sid": 975710347718466,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 614390593286845,
+					"parameters": [
+						"\"Yes. And it seems they succeeded… although we don't know to whom.\"\r\n",
+						"4",
+						"\"story/conclusionNova2\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 111700012111146,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "novaFace",
+					"sid": 833120562334092,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 208841313122496,
+					"parameters": {
+						"tag": "\"music-conclusion\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 773843590001632,
+					"parameters": {
+						"layout": "final_layout"
+					}
+				}
+			],
+			"sid": 668417166000190
+		}
+	],
+	"sid": 432540694484042
 }

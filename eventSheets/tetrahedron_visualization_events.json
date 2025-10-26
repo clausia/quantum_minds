@@ -116,6 +116,35 @@
 				}
 			],
 			"sid": 418118844781499
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 559480903286997
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 174862745309834,
+					"parameters": {
+						"tag": "\"music-tetrahedron\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 553055506097357,
+					"parameters": {
+						"layout": "lab_layout"
+					}
+				}
+			],
+			"sid": 788570940917445
 		}
 	],
 	"sid": 625291801418311

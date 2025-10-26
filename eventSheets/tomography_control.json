@@ -1496,11 +1496,19 @@
 							],
 							"actions": [
 								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 863658008203678,
+									"parameters": {
+										"tag": "\"music-interrogation\""
+									}
+								},
+								{
 									"id": "go-to-layout",
 									"objectClass": "System",
-									"sid": 379778492916463,
+									"sid": 868841320908515,
 									"parameters": {
-										"layout": "tetrahedron_visualization"
+										"layout": "tetrahedron_discover_layout"
 									}
 								}
 							],

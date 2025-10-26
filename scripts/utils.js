@@ -2,25 +2,25 @@ import {drawBlochSphere, drawQubit, drawTetrahedron} from "./bloch_sphere.js";
 import {tomography, checkFidelity} from "./tomography.js";
 
 
-// facile spara probar los nieveles
-//const SIC_STATES = [
-//    { // estado 0
-//        alpha: {re: 1/Math.sqrt(2), im: 0},
-//        beta:  {re: 1/Math.sqrt(2), im: 0}
-//    },
-//    { // estado 1
-//        alpha: {re: 1/Math.sqrt(2), im: 0},
-//        beta:  {re: -1/Math.sqrt(2), im: 0}
-//    },
-//    { // estado 2
-//        alpha: {re: 1/Math.sqrt(2), im: 0},
-//        beta:  {re: 0, im: 1/Math.sqrt(2)}
-//    },
-//    { // estado 3
-//        alpha: {re: 1, im: 0},
-//        beta:  {re: 0, im: 0}
-//    }
-//];
+// faciles para probar los nieveles
+const SIC_STATES = [
+    { // estado 0
+        alpha: {re: 1/Math.sqrt(2), im: 0},
+        beta:  {re: 1/Math.sqrt(2), im: 0}
+    },
+    { // estado 1
+        alpha: {re: 1/Math.sqrt(2), im: 0},
+        beta:  {re: -1/Math.sqrt(2), im: 0}
+    },
+    { // estado 2
+        alpha: {re: 1/Math.sqrt(2), im: 0},
+        beta:  {re: 0, im: 1/Math.sqrt(2)}
+    },
+    { // estado 3
+        alpha: {re: 1, im: 0},
+        beta:  {re: 0, im: 0}
+    }
+];
 
 
 const TUTORIAL_STATES = [
@@ -46,7 +46,7 @@ const sqrt2over3 = Math.sqrt(2/3);
 const oneOverSqrt3 = 1/Math.sqrt(3);
 
 // https://en.wikipedia.org/wiki/SIC-POVM
-const SIC_STATES = [
+/*const SIC_STATES = [
     { // ψ0 = |0>
         alpha: { re: 1, im: 0 },
         beta:  { re: 0, im: 0 }
@@ -69,7 +69,7 @@ const SIC_STATES = [
             im: sqrt2over3 * Math.sin(4*Math.PI/3)
         }
     }
-];
+];*/
 
 
 // estados disponibles al inicio: 0, 1, 2, 3 (indices)

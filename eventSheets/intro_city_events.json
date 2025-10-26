@@ -88,7 +88,7 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 837510523600002,
+					"sid": 315368083942262,
 					"parameters": {
 						"layout": "robots_found_layout"
 					}
